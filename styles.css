@@ -9,7 +9,14 @@
   font-style: normal;
   src: url('fonts/lato-light.eot');
   src:
-    local('Lato Regular'),
+    local('Lato Light'),
+    /**
+     * Check computer again using a different spelling.
+     * https://webdevstudios.com/2016/05/26/css-font-face-2016-edition/
+     */
+    local('Lato-Light'),
+    local('latolight'),
+
     url('fonts/lato-light.eot?#iefix') format('embedded-opentype'),
     url('fonts/lato-light.woff2') format('woff2'),
     url('fonts/lato-light.svg#latoregular') format('svg'),
@@ -25,6 +32,13 @@
   src: url('fonts/lato-regular.eot');
   src:
     local('Lato Regular'),
+    /**
+     * Check computer again using a different spelling.
+     * https://webdevstudios.com/2016/05/26/css-font-face-2016-edition/
+     */
+    local('Lato-Regular'),
+    local('latoregular'),
+
     url('fonts/lato-regular.eot?#iefix') format('embedded-opentype'),
     url('fonts/lato-regular.woff2') format('woff2'),
     url('fonts/lato-regular.svg#latoregular') format('svg'),
@@ -39,7 +53,14 @@
   font-style: normal;
   src: url('fonts/lato-medium.eot');
   src:
-    local('Lato Regular'),
+    local('Lato Medium'),
+    /**
+     * Check computer again using a different spelling.
+     * https://webdevstudios.com/2016/05/26/css-font-face-2016-edition/
+     */
+    local('Lato-Medium'),
+    local('latomedium'),
+
     url('fonts/lato-medium.eot?#iefix') format('embedded-opentype'),
     url('fonts/lato-medium.woff2') format('woff2'),
     url('fonts/lato-medium.svg#latoregular') format('svg'),
@@ -54,7 +75,14 @@
   font-style: normal;
   src: url('fonts/lato-bold.eot');
   src:
-    local('Lato Regular'),
+    local('Lato Bold'),
+    /**
+     * Check computer again using a different spelling.
+     * https://webdevstudios.com/2016/05/26/css-font-face-2016-edition/
+     */
+    local('Lato-Bold'),
+    local('latobold'),
+
     url('fonts/lato-bold.eot?#iefix') format('embedded-opentype'),
     url('fonts/lato-bold.woff2') format('woff2'),
     url('fonts/lato-bold.svg#latoregular') format('svg'),
