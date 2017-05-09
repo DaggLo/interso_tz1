@@ -13,6 +13,24 @@
   </head>
 
   <body>
+
+    <!-- Bootstrap Modal -->
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="modalLabel"></h4>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+            <!-- <button type="button" class="btn btn-primary">Send message</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
     <header class="main_header">
       <div class="container">
         <div class="row header_bar">
@@ -423,7 +441,9 @@
         <div class="row templates_examples text-center">
           <div class="col-md-4">
             <figure>
-              <p><img src="img/layer_48.png" alt="Cайт детского сада. Шаблон No 1"></p>
+              <button type="button" class="btn btn-link" data-toggle="modal" data-target="#modal" data-header="Cайт детского сада. Шаблон No 1">
+                <img src="img/layer_48.png" alt="Cайт детского сада. Шаблон No 1">
+              </button>
               <figcaption>
                 <p>сайт детского сада</p>
                 <p>Детский сад. Шаблон No 1</p>
@@ -556,7 +576,7 @@
                 <address>Александра Шоу</address>
               </div>
             </article>
-            
+
             <div class="feedback_controls">
               <a href="#"><img src="img/arrow_left.png" alt="Предыдущий отзыв"></a>
               <a href="#"><img src="img/arrow_right.png" alt="Следующий отзыв"></a>
@@ -612,8 +632,24 @@
     </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- <script src="js/jquery-3.2.1.min.js"></script> -->
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+
+    <!-- Handling the Bootstrap modals -->
+    <script>
+      $('#modal').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget);
+        var header = button.data('header') + ".";
+        var number = header.match(/\d+/);
+        var modal = $(this);
+
+        modal.find('.modal-title').text(header);
+        modal.find('.modal-body').load( "ajax/template_" + number + ".html");
+      });
+    </script>
   </body>
 </html>
