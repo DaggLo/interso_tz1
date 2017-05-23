@@ -316,19 +316,22 @@ body {
 .features_details > div:nth-child(1) > .icon {
   background-position: -86px -76px;
   width: 73px;
-  height: 72px;
+  height: 75px;
+  padding-bottom: 3px;
 }
 
 .features_details > div:nth-child(2) > .icon {
   background-position: -165px -75px;
   width: 72px;
-  height: 67px;
+  height: 75px;
+  padding-bottom: 8px;
 }
 
 .features_details > div:nth-child(3) > .icon {
   background-position: 0 -76px;
   width: 80px;
-  height: 63px;
+  height: 75px;
+  padding-bottom: 12px;
 }
 
 .features_details h3 {
@@ -564,19 +567,24 @@ body {
     background-position: -37px -150px;
   }
 
-  .info_tabs_item img {
-    height: 70px;
+  .info_tabs_item div {
+    height: 73px;
+    text-align: center;
+  }
+
+  .info_tabs_item div::before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
   }
 
   .info_tabs_item p {
-    font-size: 12pt;
-    line-height: 15pt;
-  }
-
-  .info_tabs_item figcaption p {
     width: 100px;
     margin: 0 auto;
     padding-top: 7px;
+    font-size: 12pt;
+    line-height: 15pt;
   }
 
   .info_tabs_description h2 {
@@ -1023,7 +1031,7 @@ body {
     padding-top: 5px;
     color: #656e00;
   }
-  
+
   .contacts .phone a::before {
     content: "";
     display: inline-block;
@@ -1033,7 +1041,7 @@ body {
     height: 31px;
     vertical-align: text-top;
   }
-  
+
   .contacts .email a::before {
     content: "";
     display: inline-block;
@@ -1043,7 +1051,7 @@ body {
     height: 29px;
     vertical-align: text-top;
   }
-  
+
   .contacts .message a::before {
     content: "";
     display: inline-block;
