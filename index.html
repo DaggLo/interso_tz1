@@ -9,6 +9,15 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    
+    <!--[if lte IE 9]>
+      <style type="text/css">
+        .ie9 {
+          background-image: url('img/layer_56.png');
+          background-size: cover;
+        }
+      </style>
+    <![endif]-->
   </head>
 
   <body>
@@ -76,12 +85,12 @@
         </div>
 
         <div class="row header_carousel">
-          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <div id="header_slider" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
-              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              <li data-target="#header_slider" data-slide-to="0" class="active"></li>
+              <li data-target="#header_slider" data-slide-to="1"></li>
+              <li data-target="#header_slider" data-slide-to="2"></li>
             </ol>
 
             <!-- Wrapper for slides -->
@@ -125,11 +134,11 @@
             </div>
 
             <!-- Controls -->
-            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <a class="left carousel-control" href="#header_slider" role="button" data-slide="prev">
               <span class="" aria-hidden="true"><div class="icon header_carousel_control_prev"></div>
               <span class="sr-only">Previous</span>
             </a>
-            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <a class="right carousel-control" href="#header_slider" role="button" data-slide="next">
               <span class="" aria-hidden="true"><div class="icon header_carousel_control_next"></div>
               <span class="sr-only">Next</span>
             </a>
@@ -520,7 +529,7 @@
       </section>
 
       <section class="container-fluid news_and_feedback">
-        <div class="row">
+        <div class="row ie9">
           <div class="col-md-6 news">
             <h2>Новости</h2>
 
@@ -544,20 +553,42 @@
           </div>
 
           <div class="col-md-6 feedback">
-            <article>
-              <h2>Отзывы пользователей</h2>
-              <div class="feedback_blob">
-                <p>Заказали у нас сайт? Все договоры с ОУ заключаются в полном соответствии с законом и без проблем проходят в казначействе. При заключении договора, контракта по 44-ФЗ, вы можете выбрать любой подходящий вам способ оплаты. Так же можете оплатить создание сайта через онлайн-сервис в любой удобной вам платежной системе.</p>
-                <address>Александра Шоу</address>
-              </div>
-            </article>
+            <h2>Отзывы пользователей</h2>
+            
+            <div id="comments_slider" class="carousel slide" data-ride="carousel">
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <article>
+                    <div></div>
+                    <p>Заказали у нас сайт? Все договоры с ОУ заключаются в полном соответствии с законом и без проблем проходят в казначействе. При заключении договора, контракта по 44-ФЗ, вы можете выбрать любой подходящий вам способ оплаты. Так же можете оплатить создание сайта через онлайн-сервис в любой удобной вам платежной системе.</p>
+                    <address>Александра Шоу</address>
+                  </article>
+                </div>
+                <div class="carousel-caption"></div>
 
-            <div class="feedback_controls">
-              <a href="#">
-                <div class="icon"></div>
+                <div class="item">
+                  <article>
+                    <div></div>
+                    <p>Заказали у нас сайт? Все договоры с ОУ заключаются в полном соответствии с законом и без проблем проходят в казначействе. При заключении договора, контракта по 44-ФЗ, вы можете выбрать любой подходящий вам способ оплаты. Так же можете оплатить создание сайта через онлайн-сервис в любой удобной вам платежной системе.</p>
+                    <address>Александра Шоу</address>
+                  </article>
+                  <div class="carousel-caption"></div>
+                </div>
+              </div>
+
+              <!-- Controls -->
+              <a class="left" href="#comments_slider" role="button" data-slide="prev">
+                <span class="" aria-hidden="true">
+                  <div class="icon"></div>
+                </span>
+                <span class="sr-only">Previous</span>
               </a>
-              <a href="#">
-                <div class="icon"></div>
+              <a class="right" href="#comments_slider" role="button" data-slide="next">
+                <span class="" aria-hidden="true">
+                  <div class="icon"></div>
+                </span>
+                <span class="sr-only">Next</span>
               </a>
             </div>
           </div>

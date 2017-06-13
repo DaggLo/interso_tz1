@@ -227,7 +227,7 @@ body {
   height: 37px;
 }
 
-.carousel-caption {
+.header_carousel .carousel-caption {
   width: 49%;
   background-color: rgba(0, 0, 0, 0.55);
   left: 0;
@@ -907,7 +907,7 @@ body {
  * ÃƒÂÃ‚ÂÃƒÂÃ‚Â¾ÃƒÂÃ‚Â²ÃƒÂÃ‚Â¾Ãƒâ€˜Ã‚ÂÃƒâ€˜Ã¢â‚¬Å¡ÃƒÂÃ‚Â¸ ÃƒÂÃ‚Â¸ ÃƒÂÃ‚Â¾Ãƒâ€˜Ã¢â‚¬Å¡ÃƒÂÃ‚Â·Ãƒâ€˜Ã¢â‚¬Â¹ÃƒÂÃ‚Â²Ãƒâ€˜Ã¢â‚¬Â¹.
  */
   .news_and_feedback {
-    background-image: url('img/layer_56.png');
+    background: linear-gradient(to right, #f2f9ff 50%, #ffece0 50%);
   }
 
   .news {
@@ -951,24 +951,19 @@ body {
     padding-left: 70px;
   }
 
-
-  .feedback p {
-    margin-bottom: 12px;
-    line-height: 1.6;
-    font-size: 13pt;
-    padding: 60px 55px 0px 55px;
+  .feedback #comments_slider {
+    padding-left: 55px;
   }
 
-  .feedback_blob {
-    margin-left: 55px;
+  .feedback article {
+    margin-top: 30px;
     background-color: #fff;
     border-radius: 10px;
     width: 400px;
     position: relative;
   }
 
-  .feedback_blob::before {
-    content: "";
+  .feedback article > div {
     height: 0px;
     width: 20px;
     position: absolute;
@@ -978,7 +973,14 @@ body {
     border-right: 20px solid transparent;
   }
 
-  .feedback address {
+  .feedback article > p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    font-size: 13pt;
+    padding: 60px 55px 0px 55px;
+  }
+
+  .feedback article > address {
     line-height: 1.6;
     font-size: 13pt;
     padding: 0px 55px 50px 55px;
@@ -989,25 +991,26 @@ body {
 
   .feedback_controls {
     padding-left: 70px;
+
+  }
+
+  .feedback #comments_slider > a {
+    display: inline-block;
+    padding: 10px;
     margin-top: 27px;
   }
 
-  .feedback_controls a {
-    display: inline-block;
-    padding: 10px;
-  }
-
-  .feedback_controls div {
+  .feedback .icon {
     width: 15px;
     height: 14px;
     margin: auto;
   }
 
-  .feedback_controls a:first-child div {
+  .feedback .left .icon {
     background-position: -253px -129px;
   }
 
-  .feedback_controls a:last-child div {
+  .feedback .right .icon {
     background-position: -253px -151px ;
   }
 
