@@ -9,7 +9,7 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    
+
     <!--[if lte IE 9]>
       <style type="text/css">
         .ie9 {
@@ -22,43 +22,76 @@
 
   <body>
 
-    <!-- Bootstrap Modal -->
-    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+    <!-- Bootstrap Modal for templates -->
+    <div class="modal fade" id="templatesModal" tabindex="-1" role="dialog" aria-labelledby="templatesModalLabel">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="modalLabel"></h4>
+            <h4 class="modal-title" id="templatesModalLabel"></h4>
           </div>
           <div class="modal-body"></div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-            <!-- <button type="button" class="btn btn-primary">Send message</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Bootstrap Modal for a login form -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="loginModalLabel">
+              Вход в систему
+            </h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="topLogin">Логин или адрес эл. почты</label>
+                <input type="email" class="form-control" id="topLogin" placeholder="Логин или адрес эл. почты">
+              </div>
+              <div class="form-group">
+                <label for="topPassword">Пароль</label>
+                <input type="password" class="form-control" id="topPassword" placeholder="Пароль">
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> Запомнить меня
+                </label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-default">Войти</button>
           </div>
         </div>
       </div>
     </div>
 
-    <header class="main_header">
-      <div class="container-fluid">
-        <div class="row header_bar">
-          <div class="col-md-6 header_bar_title">
-            <span>Конструктор сайтов для образовательных учреждений</span>
+    <header>
+      <div class="main_header container-fluid">
+        <div class="top_bar row">
+          <div class="title col-md-6">
+            Конструктор сайтов для образовательных учреждений
           </div>
 
-          <div class="col-md-3 header_bar_phone">
+          <div class="phone col-md-3">
             <span class="icon"></span>
             <a href="tel:+78142332211">8 8142 33-22-11</a>
           </div>
 
-          <div class="col-md-3 header_bar_login">
-            <a href="#">
-              <div>Войти в сервис</div>
-            </a>
+          <div class="login col-md-3">
+            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#loginModal" data-header="Форма входа в систему.">
+              Войти в сервис
+            </button>
           </div>
         </div>
 
-        <div class="row header_mainmenu">
+        <div class="main_menu row">
           <div class="col-md-2 header_mainmenu_logo">
             <span class="icon"></span>
           </div>
@@ -135,11 +168,15 @@
 
             <!-- Controls -->
             <a class="left carousel-control" href="#header_slider" role="button" data-slide="prev">
-              <span class="" aria-hidden="true"><div class="icon header_carousel_control_prev"></div>
+              <span class="" aria-hidden="true">
+                <div class="icon header_carousel_control_prev"></div>
+              </span>
               <span class="sr-only">Previous</span>
             </a>
             <a class="right carousel-control" href="#header_slider" role="button" data-slide="next">
-              <span class="" aria-hidden="true"><div class="icon header_carousel_control_next"></div>
+              <span class="" aria-hidden="true">
+                <div class="icon header_carousel_control_next"></div>
+              </span>
               <span class="sr-only">Next</span>
             </a>
           </div>
@@ -554,7 +591,7 @@
 
           <div class="col-md-6 feedback">
             <h2>Отзывы пользователей</h2>
-            
+
             <div id="comments_slider" class="carousel slide" data-ride="carousel">
               <!-- Wrapper for slides -->
               <div class="carousel-inner" role="listbox">
@@ -646,16 +683,16 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- <script src="js/bootstrap.min.js"></script> -->
 
-    <!-- Handling the Bootstrap modals -->
+    <!-- Varying the #templatesModal content based on trigger button -->
     <script>
-      $('#modal').on('show.bs.modal', function (event) {
+      $('#templatesModal').on('show.bs.modal', function(event) {
         var button = $(event.relatedTarget);
         var header = button.data('header') + ".";
-        var number = header.match(/\d+/);
+        var id = header.match(/\d+/);
         var modal = $(this);
 
         modal.find('.modal-title').text(header);
-        modal.find('.modal-body').load( "ajax/template_" + number + ".html");
+        modal.find('.modal-body').load("ajax/template_" + id + ".html");
       });
     </script>
   </body>

@@ -145,19 +145,19 @@ body {
  * ÃƒÂÃ¢â‚¬ËœÃƒÂÃ‚ÂÃƒÂÃ¢â‚¬â€ÃƒÂÃ…Â¾ÃƒÂÃ¢â‚¬â„¢ÃƒÂÃ‚Â«ÃƒÂÃ¢â‚¬Â¢ ÃƒÂÃ‚Â¡ÃƒÂÃ‚Â¢ÃƒÂÃ‹Å“ÃƒÂÃ¢â‚¬ÂºÃƒÂÃ‹Å“
  * ÃƒÂÃ‚Â¨ÃƒÂÃ‚Â°ÃƒÂÃ‚Â¿ÃƒÂÃ‚ÂºÃƒÂÃ‚Â° ÃƒÂÃ‚Â¸ Ãƒâ€˜Ã‚ÂÃƒÂÃ‚Â»ÃƒÂÃ‚Â°ÃƒÂÃ‚Â¹ÃƒÂÃ‚Â´ÃƒÂÃ‚ÂµÃƒâ€˜Ã¢â€šÂ¬
  */
-.header_bar {
+.top_bar {
   font-variant: small-caps;
   text-transform: lowercase;
   line-height: 18.66pt;
 }
 
-.header_bar_title {
+.top_bar .title {
   font-size: 13pt;
   font-weight: 400;
   letter-spacing: 0.03em;
 }
 
-.header_bar_phone .icon {
+.top_bar .phone .icon {
   display: inline-block;
   background-position: -250px -102px;
   width: 20px;
@@ -165,23 +165,20 @@ body {
   vertical-align: bottom;
 }
 
-.header_bar_phone a {
+.top_bar .phone a {
   font-size: 13pt;
   color: #000;
   vertical-align: middle;
 }
 
-.header_bar_login a {
+.top_bar .login button {
   color: #fff;
-}
-
-.header_bar_login div {
   background-color: #ff6400;
   font-size: 12pt;
   text-align: center;
 }
 
-.header_mainmenu {
+.main_menu {
   background-color: #f1fd72;
   border-bottom: 5px #b0bc2f solid;
 }
@@ -465,17 +462,17 @@ body {
  * ÃƒÂÃ‚Â¡Ãƒâ€˜Ã¢â‚¬Å¡ÃƒÂÃ‚Â¸ÃƒÂÃ‚Â»ÃƒÂÃ‚Â¸ ÃƒÂÃ‚Â´ÃƒÂÃ‚Â»Ãƒâ€˜Ã‚Â ÃƒÂÃ‚Â¼ÃƒÂÃ‚Â¾ÃƒÂÃ‚Â½ÃƒÂÃ‚Â¸Ãƒâ€˜Ã¢â‚¬Å¡ÃƒÂÃ‚Â¾Ãƒâ€˜Ã¢â€šÂ¬ÃƒÂÃ‚Â¾ÃƒÂÃ‚Â² Ãƒâ€˜Ã‚Â Ãƒâ€˜Ã¢â€šÂ¬ÃƒÂÃ‚Â°ÃƒÂÃ‚Â·Ãƒâ€˜Ã¢â€šÂ¬ÃƒÂÃ‚ÂµÃƒâ€˜Ã‹â€ ÃƒÂÃ‚ÂµÃƒÂÃ‚Â½ÃƒÂÃ‚Â¸ÃƒÂÃ‚ÂµÃƒÂÃ‚Â¼ >1200px
  * ÃƒÂÃ‚Â¨ÃƒÂÃ‚Â°ÃƒÂÃ‚Â¿ÃƒÂÃ‚ÂºÃƒÂÃ‚Â°. ÃƒÂÃ‚Â¡ÃƒÂÃ‚Â»ÃƒÂÃ‚Â°ÃƒÂÃ‚Â¹ÃƒÂÃ‚Â´ÃƒÂÃ‚ÂµÃƒâ€˜Ã¢â€šÂ¬.
  */
-  .header_bar_title {
+  .top_bar .title {
     height: 40px;
     padding: 6px 10px 6px 15px;
   }
 
-  .header_bar_phone {
+  .top_bar .phone {
     height: 40px;
     padding: 6px 10px 10px 70px;
   }
 
-  .header_bar_login div {
+  .top_bar .login button {
     height: 40px;
     width: 160px;
     margin-left: 45px;
