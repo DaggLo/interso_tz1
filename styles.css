@@ -127,100 +127,153 @@
   }
 }
 
-/**
- * ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¾ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â«ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¢ ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂÃƒÆ’Ã¢â‚¬Â¹Ãƒâ€¦Ã¢â‚¬Å“ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚ÂºÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂÃƒÆ’Ã¢â‚¬Â¹Ãƒâ€¦Ã¢â‚¬Å“
- */
 
- /**
-  * Tags
-  */
+/**
+* Global styles.
+*/
 body {
   font-family: 'Lato Cyr', serif;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
-  color: #000;
   letter-spacing: normal;
   font-weight: 400;
 }
 
- /**
-  * Service blocks
-  */
+
+/**
+* Service blocks.
+*/
 .icon {
   background: url("img/sprites.png") no-repeat;
 }
 
-.link {
-  
-}
-
-.login-btn 
-  
-}
-
-/**
- * ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¾ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â«ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¢ ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂÃƒÆ’Ã¢â‚¬Â¹Ãƒâ€¦Ã¢â‚¬Å“ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚ÂºÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂÃƒÆ’Ã¢â‚¬Â¹Ãƒâ€¦Ã¢â‚¬Å“
- * ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¿ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂºÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â° ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¸ ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‹Å“ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¹ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â´ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂµÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‹Å“ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬
- */
-.top-bar {
-  /* font-variant: small-caps; */
+.login-btn {
+  font-size: 12px;
   line-height: 18.66px;
-  font-size: 13px;
+  letter-spacing: 0.025em;
+  font-weight: 700;
+  text-transform: Uppercase;
+  width: 160px;
+  height: 40px;
+  border: none;
+  padding: 0;
 }
 
-.top-bar__title {
+.login-btn_color_orange {
+  background-color: #ff6400;
+  color: #fff;
+}
+
+.login-btn_color_orange:hover {
+  background-color: #f0ad4e;
+}
+
+.main-menu {
+  list-style: none;
+}
+
+.main-menu__item {
+  display: inline-block;
+  margin-left: 27px;
+}
+
+.main-menu__link {
+  display: inline-block;
+  padding: 13px 0;
+  font-size: 13pt;
+  font-weight: 700;
+}
+
+.main-menu__link_theme_yellow {
+  color: #859100;
+}
+
+.main-menu__link_theme_yellow:hover,
+.main-menu__link_theme_yellow:focus {
+  color: #000;
+}
+
+.phone {
+  font-size: 16px;
+  line-height: 19px;
+  vertical-align: middle;
+}
+
+.phone__icon {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.phone__link {
+  display: inline-block;
+  color: inherit;
+  padding: 5px;
+}
+
+.phone__link:hover,
+.phone__link:focus {
+  background-color: #e5e5e5;
+  border-radius: 3px;
+}
+
+.title {
+  font-size: 13px;
+  line-height: 18px;
   letter-spacing: 0.075em;
   text-transform: Uppercase;
 }
 
+
+/**
+* Main header.
+*/
+.top-bar {
+  height: 40px;
+}
+
+.top-bar__title {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-right: 5px;
+}
+
 .top-bar__phone {
-  vertical-align: middle;
-  font-size: 16px;
+  padding: 5px 15px 5px 65px;
 }
 
 .top-bar__phone-icon {
-  display: inline-block;
   background-position: -250px -102px;
   width: 20px;
   height: 20px;
-  vertical-align: text-bottom;
-}
-
-.top-bar__login{
-  
 }
 
 .top-bar__login-btn {
-  background-color: #ff6400;
-  color: #fff;
-  font-size: 12px;
-  letter-spacing: 0.025em;
-  font-weight: 500;
-  text-transform: Uppercase;
+  padding-left: 70px;
 }
 
-.main_menu {
+.nav-bar {
   background-color: #f1fd72;
   border-bottom: 5px #b0bc2f solid;
+  height: 105px;
 }
 
-.header_mainmenu_logo .icon {
+.nav-bar__logo {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.nav-bar__logo-icon {
   display: inline-block;
   background-position: -139px 0;
   width: 128px;
   height: 60px;
-  vertical-align: bottom;
 }
 
-.header_mainmenu_navbar a {
-  font-size: 13pt;
-  font-weight: 700;
-  color: #859100;
-}
-
-.header_mainmenu_navbar a:hover {
-  text-decoration: none;
-  color: #000;
+.nav-bar__menu {
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 80px;
 }
 
 .header_carusel_item_image {
@@ -469,15 +522,15 @@ body {
  *************************************************************************************/
 @media (min-width: 1200px) {
 
-  .container {
+  /* .container {
     width: 1200px;
-  }
+  } */
 
-  .row {
+  /* .row {
     padding-left: 190px;
     padding-right: 190px;
-    /* max-width: 980px; */
-  }
+    max-width: 980px;
+  } */
 
 
 /**
