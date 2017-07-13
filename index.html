@@ -432,91 +432,95 @@
         </div>
       </section>
 
-      <section class="container-fluid rates">
-        <div class="row rates_header">
-          <div class="col-md-12 text-center">
-            <h2>Тарифные планы</h2>
+      <section class="rates">
+        <div class="container">
+          <div class="rates-header row">
+            <div class="col-md-12">
+              <h2 class="rates-header__header">Тарифные планы</h2>
+            </div>
           </div>
-        </div>
 
-        <div class="row rates_options">
-          <div class="col-md-4 text-center">
-            <div class="rates_options_1">
-              <h4>ДЕМО</h4>
-              <p>
-                <span class="rates_options_1_value">0</span>
-                <span class="rates_options_1_currency"> ₽</span>
-              </p>
-              <p class="rates_options_1_date">до 31 декабря 2016</p>
-            </div>
-            <div class="rates_options_2">
-              <p>бесплатно</p>
-            </div>
-            <div class="rates_options_3">
-              <ul>
-                <li>Пробная версия</li>
-              </ul>
-              <a href="#">
-                <p>Создать сайт</p>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4 text-center">
-            <div class="rates_options_1">
-              <h4>Сделаю сам</h4>
-              <p>
-                <span class="rates_options_1_value">3099</span>
-                <span class="rates_options_1_currency"> ₽</span>
-              </p>
-              <p class="rates_options_1_date">за 12 месяцев</p>
-            </div>
-            <div class="rates_options_2">
-              <p>1 год</p>
-            </div>
-            <div class="rates_options_3">
-              <ul>
-                <li>Скидка 0%</li>
-                <li>Домен</li>
-                <li>Хостинг</li>
-                <li>Тех. поддержка</li>
-                <li>Бесплатное обновление</li>
-              </ul>
-              <a href="#">
-                <p>Создать сайт</p>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4 text-center">
-            <div class="rates_options_1">
-              <h4>Разработка под ключ</h4>
-              <p>
-                <span class="rates_options_1_value">5490</span>
-                <span class="rates_options_1_currency"> ₽</span>
-              </p>
-              <p class="rates_options_1_date">за 24 месяца</p>
-            </div>
-            <div class="rates_options_2">
-              <p>2 года</p>
-            </div>
-            <div class="rates_options_3">
-              <ul>
-                <li>Скидка 12%</li>
-                <li>Домен</li>
-                <li>Хостинг</li>
-                <li>Тех. поддержка</li>
-                <li>Бесплатное обновлени</li>
-              </ul>
-              <a href="#">
-                <p>Создать сайт</p>
-              </a>
-            </div>
-          </div>
-        </div>
+          <div class="rates-options row">
+            <div class="col-md-4">
+              <div class="rates-options__inner">
+                <div class="rates-options__top-block">
+                  <h4 class="rates-options__header">ДЕМО</h4>
+                  <div class="rates-options__price">
+                    <span class="rates-options__value">0</span>
+                    <span class="rates-options__currency"> ₽</span>
+                  </div>
+                  <span class="rates-options__period">до 31 декабря 2016</span>
+                </div>
 
-        <div class="row rates_contract">
-          <div class="col-md-12 text-center">
-            <h3>Договор и способы оплаты</h3>
-            <p>Заказали у нас сайт? Все договора с ОУ заключаются в полном соответствии с законом и без проблем проходят в казначействе. При заключении договора, контракта по 44-ФЗ, вы можете выбрать любой подходящий вам способ оплаты. Так же можете оплатить создание сайта через онлайн-сервис в любой удобной вам платежной системе.</p>
+                <div class="rates-options__middle-block">бесплатно</div>
+
+                <div class="rates-options__bottom-block">
+                  <ul class="rates-options__list">
+                    <li class="rates-options__list-item">Пробная версия</li>
+                  </ul>
+                  <button type="button" class="login-btn login-btn_color_blue rates-options__button" data-toggle="modal" data-target="#loginModal" data-header="Форма входа в систему">Создать сайт</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="rates-options__inner">
+                <div class="rates-options__top-block">
+                  <h4 class="rates-options__header">Сделаю сам</h4>
+                  <div class="rates-options__price">
+                    <span class="rates-options__value">3099</span>
+                    <span class="rates-options__currency"> ₽</span>
+                  </div>
+                  <span class="rates-options__period">за 12 месяцев</span>
+                </div>
+
+                <div class="rates-options__middle-block">1 год</div>
+
+                <div class="rates-options__bottom-block">
+                  <ul class="rates-options__list">
+                    <li class="rates-options__list-item">Скидка 0%</li>
+                    <li class="rates-options__list-item">Домен</li>
+                    <li class="rates-options__list-item">Хостинг</li>
+                    <li class="rates-options__list-item">Тех. поддержка</li>
+                    <li class="rates-options__list-item">Бесплатное обновление</li>
+                  </ul>
+                  <button type="button" class="login-btn login-btn_color_blue rates-options__button" data-toggle="modal" data-target="#loginModal" data-header="Форма входа в систему">Создать сайт</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="rates-options__inner">
+                <div class="rates-options__top-block">
+                  <h4 class="rates-options__header">Разработка под ключ</h4>
+                  <div class="rates-options__price">
+                    <span class="rates-options__value">5490</span>
+                    <span class="rates-options__currency"> ₽</span>
+                  </div>
+                  <span class="rates-options__period">за 24 месяца</span>
+                </div>
+
+                <div class="rates-options__middle-block">2 года</div>
+
+                <div class="rates-options__bottom-block">
+                  <ul class="rates-options__list">
+                    <li class="rates-options__list-item">Скидка 12%</li>
+                    <li class="rates-options__list-item">Домен</li>
+                    <li class="rates-options__list-item">Хостинг</li>
+                    <li class="rates-options__list-item">Тех. поддержка</li>
+                    <li class="rates-options__list-item">Бесплатное обновлени</li>
+                  </ul>
+                  <button type="button" class="login-btn login-btn_color_blue rates-options__button" data-toggle="modal" data-target="#loginModal" data-header="Форма входа в систему">Создать сайт</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contract row">
+            <div class="col-md-12">
+              <h3 class="contract__header">Договор и способы оплаты</h3>
+              <p class="contract__paragraph">Заказали у нас сайт? Все договора с ОУ заключаются в полном соответствии с законом и без проблем проходят в казначействе. При заключении договора, контракта по 44-ФЗ, вы можете выбрать любой подходящий вам способ оплаты. Так же можете оплатить создание сайта через онлайн-сервис в любой удобной вам платежной системе.</p>
+            </div>
           </div>
         </div>
       </section>
