@@ -635,68 +635,76 @@
         </div>
       </section>
 
-      <section class="container-fluid news_and_feedback">
-        <div class="row ie9">
-          <div class="col-md-6 news">
-            <h2>Новости</h2>
+      <section class="news-and-feedback">
+        <div class="container">
+          <div class="row ie9">
+            <div class="col-md-6">
+              <h3 class="news-header news-and-feedback__header">Новости</h3>
 
-            <article>
-              <a href="#"><h3>Не бойтесь проверок</h3></a>
-              <p>Все образовательные организации обязаны обеспечить открытую и доступную информацию о своей деятельности, в том числе и в сети Интернет. Это требование изложено в ст. 29 закона РФ.</p>
-              <time datetime="2016-05-12">12.05.2016 г.</time>
-            </article>
+                <article class="news-item">
+                  <a class="news-item__link" href="#">
+                  <h4 class="news-item__header">Не бойтесь проверок</h4>
+                  <p class="news-item__content">Все образовательные организации обязаны обеспечить открытую и доступную информацию о своей деятельности, в том числе и в сети Интернет. Это требование изложено в ст. 29 закона РФ.</p>
+                  </a>
+                  <time class="news-item__date" datetime="2016-05-12">12.05.2016 г.</time>
+                </article>
+                
+              <article class="news-item">
+                <a class="news-item__link" href="#">
+                  <h4 class="news-item__header">Чем отличается сайт образовательной организации от обычных сайтов</h4>
+                  <p class="news-item__content">Каждая образовательная организация имеет свою специфику. В частности, если это вуз, то должен быть передан сам его дух, философия. Подавляющее большинство вузов имеют свой сайт.</p>
+                </a>
+                <time class="news-item__date" datetime="2016-05-12">12.05.2016 г.</time>
+              </article>
 
-            <article>
-              <a href="#"><h3>Чем отличается сайт образовательной организации от обычных сайтов</h3></a>
-              <p>Каждая образовательная организация имеет свою специфику. В частности, если это вуз, то должен быть передан сам его дух, философия. Подавляющее большинство вузов имеют свой сайт.</p>
-              <time datetime="2016-05-12">12.05.2016 г.</time>
-            </article>
+              <article class="news-item">
+                <a class="news-item__link" href="#">
+                  <h4 class="news-item__header">Как создать сайт образовательной организации</h4>
+                  <p class="news-item__content">В первую очередь необходимо понимать, что сайт является своеобразным «лицом» учреждения. Именно поэтому он должен быть не только информативным, но еще и современным, понятным аудитории.</p>
+                </a>
+                <time class="news-item__date" datetime="2016-05-12">12.05.2016 г.</time>
+              </article>
+            </div>
 
-            <article>
-              <a href="#"><h3>Как создать сайт образовательной организации</h3></a>
-              <p>В первую очередь необходимо понимать, что сайт является своеобразным «лицом» учреждения. Именно поэтому он должен быть не только информативным, но еще и современным, понятным аудитории.</p>
-              <time datetime="2016-05-12">12.05.2016 г.</time>
-            </article>
-          </div>
+            <div class="col-md-6">
+              <h3 class="feedback-header news-and-feedback__header">Отзывы пользователей</h3>
 
-          <div class="col-md-6 feedback">
-            <h2>Отзывы пользователей</h2>
-
-            <div id="comments_slider" class="carousel slide" data-ride="carousel">
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                  <article>
-                    <div></div>
-                    <p>Заказали у нас сайт? Все договоры с ОУ заключаются в полном соответствии с законом и без проблем проходят в казначействе. При заключении договора, контракта по 44-ФЗ, вы можете выбрать любой подходящий вам способ оплаты. Так же можете оплатить создание сайта через онлайн-сервис в любой удобной вам платежной системе.</p>
-                    <address>Александра Шоу</address>
-                  </article>
-                </div>
-                <div class="carousel-caption"></div>
-
-                <div class="item">
-                  <article>
-                    <div></div>
-                    <p>Заказали у нас сайт? Все договоры с ОУ заключаются в полном соответствии с законом и без проблем проходят в казначействе. При заключении договора, контракта по 44-ФЗ, вы можете выбрать любой подходящий вам способ оплаты. Так же можете оплатить создание сайта через онлайн-сервис в любой удобной вам платежной системе.</p>
-                    <address>Александра Шоу</address>
-                  </article>
+              <div id="comments_slider" class="feedback-slider carousel slide" data-ride="carousel">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <article class="feedback-slider__article">
+                      <div class="feedback-slider__bubble"></div>
+                      <p class="feedback-slider__content">Заказали у нас сайт? Все договоры с ОУ заключаются в полном соответствии с законом и без проблем проходят в казначействе. При заключении договора, контракта по 44-ФЗ, вы можете выбрать любой подходящий вам способ оплаты. Так же можете оплатить создание сайта через онлайн-сервис в любой удобной вам платежной системе.</p>
+                      <address class="feedback-slider__address">Александра Шоу</address>
+                    </article>
+                  </div>
                   <div class="carousel-caption"></div>
-                </div>
-              </div>
 
-              <!-- Controls -->
-              <a class="left" href="#comments_slider" role="button" data-slide="prev">
-                <span class="" aria-hidden="true">
-                  <div class="icon"></div>
-                </span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="right" href="#comments_slider" role="button" data-slide="next">
-                <span class="" aria-hidden="true">
-                  <div class="icon"></div>
-                </span>
-                <span class="sr-only">Next</span>
-              </a>
+                  <div class="item">
+                    <article class="feedback-slider__article">
+                      <div class="feedback-slider__bubble"></div>
+                      <p class="feedback-slider__content">Заказали у нас сайт? Все договоры с ОУ заключаются в полном соответствии с законом и без проблем проходят в казначействе. При заключении договора, контракта по 44-ФЗ, вы можете выбрать любой подходящий вам способ оплаты. Так же можете оплатить создание сайта через онлайн-сервис в любой удобной вам платежной системе.</p>
+                      <address class="feedback-slider__address">Александра Шоу</address>
+                    </article>
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="feedback-slider__controls feedback-slider__controls_left" href="#comments_slider" role="button" data-slide="prev">
+                  <span class="" aria-hidden="true">
+                    <div class="icon feedback-slider__icon feedback-slider__icon_left"></div>
+                  </span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="feedback-slider__controls feedback-slider__controls_right" href="#comments_slider" role="button" data-slide="next">
+                  <span class="" aria-hidden="true">
+                    <div class="icon feedback-slider__icon feedback-slider__icon_right"></div>
+                  </span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>

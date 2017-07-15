@@ -814,6 +814,8 @@ body {
 }
 
 .templates-item__img {
+  opacity: 1;
+  transition: all 0.5s ease;
 }
 
 .templates-item:hover .templates-item__img {
@@ -939,6 +941,8 @@ body {
   width: 210px;
   height: 210px;
   background-repeat: no-repeat;
+  opacity: 1;
+  transition: all 0.5s ease;
 }
 
 .clients-item__img_1 {
@@ -998,123 +1002,148 @@ body {
 }
 
 
+/**
+ * News and feedback.
+ */
+.news-and-feedback {
+  height: 708px;
+  background: linear-gradient(to right, #f2f9ff 50%, #ffece0 50%);
+  /* background-image: url('img/layer_56.png'); */
+  /* background-size: cover; */
+}
+
+.news-and-feedback__header {
+  font-size: 22px;
+  line-height: 50px;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 40px auto 27px;
+}
 
 
-@media (min-width: 1200px) {
-  
+/**
+ * News.
+ */
+.news-header{
+  color: #4186d3;
+}
+
+.news-item {
+  width: 410px;
+  margin-bottom: 45px;
+}
+
+.news-item__link {
+  display: block;
+  color: inherit;
+}
+
+.news-item__link:hover {
+  opacity: 0.7;
+  color: inherit;
+}
+
+.news-item__header {
+  color: #4186d3;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+  margin: 0 0 10px;
+}
+
+.news-item__content {
+  font-size: 14px;
+  line-height: 19px;
+  margin: 0 0 8px;
+}
+
+.news-item__date {
+  font-size: 12px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+}
 
 
+/**
+ * Feedback.
+ */
+.feedback-header {
+  color: #ff6400;
+  text-align: center;
+}
+
+.feedback-slider {
+  padding-left: 60px;
+  top: -9px;
+}
+
+.feedback-slider__article {
+  margin-top: 30px;
+  background-color: #fff;
+  border-radius: 15px;
+  width: 400px;
+  height: 428px;
+}
+
+.feedback-slider__bubble {
+  height: 0px;
+  width: 20px;
+  position: absolute;
+  left: 320px;
+  top: -30px;
+  border-bottom: 30px solid #fff;
+  border-right: 20px solid transparent;
+}
+
+.feedback-slider__content {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 300;
+  padding: 46px 48px 17px 50px;
+  margin: 0;
+}
+
+.feedback-slider__address {
+  color: #ff6400;
+  font-size: 12px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-left: 50px;
+}
+
+.feedback-slider__controls {
+  display: inline-block;
+  padding: 10px;
+  margin-top: 32px;
+}
+
+.feedback-slider__controls_left {
+  margin-left: 10px;
+  padding-right: 9px;
+}
+
+.feedback-slider__controls_right {
+  padding-left: 9px;
+}
+
+.feedback-slider__icon {
+  width: 15px;
+  height: 14px;
+  margin: auto;
+}
+
+.feedback-slider__icon_left {
+  background-position: -253px -129px;
+}
+
+.feedback-slider__icon_right {
+  background-position: -253px -151px ;
+}
 
 
-
-
-  .news_and_feedback {
-    background: linear-gradient(to right, #f2f9ff 50%, #ffece0 50%);
-  }
-
-  .news {
-
-  }
-
-  .news h2 {
-    color: #4186d3;
-    font-size: 30px;
-    font-weight: 100;
-    margin-bottom: 40px;
-    padding-top: 25px;
-  }
-
-  .news h3 {
-    color: #4186d3;
-    font-size: 16px;
-    font-weight: 500;
-  }
-
- .news p {
-    margin-bottom: 12px;
-    width: 410px;
-    line-height: 1.37;
-  }
-
-  .news article {
-    margin-bottom: 50px;
-  }
-
-  .feedback {
-
-  }
-
-  .feedback h2 {
-    color: #ff6400;
-    font-size: 30px;
-    font-weight: 100;
-    margin-bottom: 40px;
-    padding-top: 25px;
-    padding-left: 70px;
-  }
-
-  .feedback #comments_slider {
-    padding-left: 55px;
-  }
-
-  .feedback article {
-    margin-top: 30px;
-    background-color: #fff;
-    border-radius: 10px;
-    width: 400px;
-    position: relative;
-  }
-
-  .feedback article > div {
-    height: 0px;
-    width: 20px;
-    position: absolute;
-    left: 335px;
-    top: -30px;
-    border-bottom: 30px solid #fff;
-    border-right: 20px solid transparent;
-  }
-
-  .feedback article > p {
-    margin-bottom: 12px;
-    line-height: 1.6;
-    font-size: 13pt;
-    padding: 60px 55px 0px 55px;
-  }
-
-  .feedback article > address {
-    line-height: 1.6;
-    font-size: 13pt;
-    padding: 0px 55px 50px 55px;
-    color: #ff6400;
-    text-transform: lowercase;
-    font-variant: small-caps;
-  }
-
-  .feedback_controls {
-    padding-left: 70px;
-
-  }
-
-  .feedback #comments_slider > a {
-    display: inline-block;
-    padding: 10px;
-    margin-top: 27px;
-  }
-
-  .feedback .icon {
-    width: 15px;
-    height: 14px;
-    margin: auto;
-  }
-
-  .feedback .left .icon {
-    background-position: -253px -129px;
-  }
-
-  .feedback .right .icon {
-    background-position: -253px -151px ;
-  }
 
 
 
