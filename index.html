@@ -82,8 +82,8 @@
               Конструктор сайтов для образовательных учреждений
             </div>
 
-            <div class="phone top-bar__phone col-md-3">
-              <a class="phone__link" href="tel:+78142332211"><span class="phone__icon top-bar__phone-icon icon"></span> 8 8142 33-22-11</a>
+            <div class="contact-option top-bar__phone col-md-3">
+              <a class="link contact-option__link" href="tel:+78142332211"><span class="icon contact-option__icon top-bar__phone-icon"></span> 8 8142 33-22-11</a>
             </div>
 
             <div class="top-bar__login col-md-3">
@@ -629,7 +629,7 @@
 
           <div class="clients-map row">
             <div class="col-md-12">
-              <a class="clients-map__link" href="#">Все наши клиенты на карте</a>
+              <a class="link clients-map__link" href="#">Все наши клиенты на карте</a>
             </div>
           </div>
         </div>
@@ -642,7 +642,7 @@
               <h3 class="news-header news-and-feedback__header">Новости</h3>
 
                 <article class="news-item">
-                  <a class="news-item__link" href="#">
+                  <a class="link" href="#">
                   <h4 class="news-item__header">Не бойтесь проверок</h4>
                   <p class="news-item__content">Все образовательные организации обязаны обеспечить открытую и доступную информацию о своей деятельности, в том числе и в сети Интернет. Это требование изложено в ст. 29 закона РФ.</p>
                   </a>
@@ -650,7 +650,7 @@
                 </article>
                 
               <article class="news-item">
-                <a class="news-item__link" href="#">
+                <a class="link" href="#">
                   <h4 class="news-item__header">Чем отличается сайт образовательной организации от обычных сайтов</h4>
                   <p class="news-item__content">Каждая образовательная организация имеет свою специфику. В частности, если это вуз, то должен быть передан сам его дух, философия. Подавляющее большинство вузов имеют свой сайт.</p>
                 </a>
@@ -658,7 +658,7 @@
               </article>
 
               <article class="news-item">
-                <a class="news-item__link" href="#">
+                <a class="link" href="#">
                   <h4 class="news-item__header">Как создать сайт образовательной организации</h4>
                   <p class="news-item__content">В первую очередь необходимо понимать, что сайт является своеобразным «лицом» учреждения. Именно поэтому он должен быть не только информативным, но еще и современным, понятным аудитории.</p>
                 </a>
@@ -692,11 +692,11 @@
                 </div>
 
                 <!-- Controls -->
-                <a class="feedback-slider__controls feedback-slider__controls_left" href="#comments_slider" role="button" data-slide="prev">
+                <a class="link feedback-slider__controls feedback-slider__controls_left" href="#comments_slider" role="button" data-slide="prev">
                   <span class="icon feedback-slider__icon feedback-slider__icon_left" aria-hidden="true"></span>
                   <span class="sr-only">Previous</span>
                 </a>
-                <a class="feedback-slider__controls feedback-slider__controls_right" href="#comments_slider" role="button" data-slide="next">
+                <a class="link feedback-slider__controls feedback-slider__controls_right" href="#comments_slider" role="button" data-slide="next">
                   <span class="icon feedback-slider__icon feedback-slider__icon_right" aria-hidden="true"></span>
                   <span class="sr-only">Next</span>
                 </a>
@@ -707,46 +707,54 @@
       </section>
     </main>
 
-    <footer class="container-fluid">
-      <address class="row contacts">
-        <div class="col-md-4 phone">
-          <a href="tel:+78142332211">8 8142 33-22-11</a>
+    <footer>
+      <div class="contacts">
+        <div class="container">
+          <address class="row">
+            <div class="contact-option contacts__phone col-md-4">
+              <a class="link contact-option__link contacts__link" href="tel:+78142332211"><span class="icon contact-option__icon contacts__phone-icon"></span>8 8142 33-22-11</a>
+            </div>
+            <div class="contact-option contacts__email col-md-4">
+              <a class="link contact-option__link contacts__link" href="mailto:info@nubex.ru"><span class="icon contact-option__icon contacts__email-icon"></span>info@nubex.ru</a>
+            </div>
+            <div class="contact-option contacts__message col-md-4">
+              <a class="link contact-option__link contacts__link" href="#"><span class="icon contact-option__icon contacts__message-icon"></span>НАПИСАТЬ НАМ</a>
+            </div>
+          </address>
         </div>
-        <div class="col-md-4 email">
-          <a href="mailto:info@nubex.ru">info@nubex.ru</a>
-        </div>
-        <div class="col-md-4 text-center message">
-          <a href="#">НАПИСАТЬ НАМ</a>
-        </div>
-      </address>
+      </div>
 
-      <section class="row company_details">
-        <div class="col-md-1 company_details_logo">
-          <div class="icon"></div>
-        </div>
+      <div class="company-details">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-1 company_details_logo">
+              <div class="icon"></div>
+            </div>
 
-        <div class="col-md-4 company_details_goal">
-          <p>Наша цель: Предоставить качественный сервис по созданию сайтов (интернет- представительств) образовательных организаций на территории Российской Федерации.</p>
-        </div>
+            <div class="col-md-4 company_details_goal">
+              <p>Наша цель: Предоставить качественный сервис по созданию сайтов (интернет- представительств) образовательных организаций на территории Российской Федерации.</p>
+            </div>
 
-        <div class="col-md-3 company_details_button text-center">
-          <a href="#">
-            <div>Создать сайт</div>
-          </a>
-        </div>
+            <div class="col-md-3 company_details_button text-center">
+              <a href="#">
+                <div>Создать сайт</div>
+              </a>
+            </div>
 
-        <div class="col-md-4 company_details_details">
-          <p>
-            © 2014—2016 15KIDS. ООО «Интэрсо»<br>
-            ОГРН 1136619000968<br>
-            ИНН/КПП 6619016046/661901001<br>
-            Все права защищены.
-          </p>
-          <p>Создание и поддержка проекта<br>
-            ООО «<a href="#">Интэрсо</a>»
-          </p>
+            <div class="col-md-4 company_details_details">
+              <p>
+                © 2014—2016 15KIDS. ООО «Интэрсо»<br>
+                ОГРН 1136619000968<br>
+                ИНН/КПП 6619016046/661901001<br>
+                Все права защищены.
+              </p>
+              <p>Создание и поддержка проекта<br>
+                ООО «<a href="#">Интэрсо</a>»
+              </p>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
     </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
