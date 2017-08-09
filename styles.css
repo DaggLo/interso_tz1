@@ -423,7 +423,9 @@ body {
  * Features.
  * Navigation block.
  */
-.features {padding-bottom: 85px;}
+.features {
+  padding-bottom: 85px;
+}
 
 .features__nav-block {
   background-color: #fdffd5;
@@ -705,7 +707,12 @@ body {
   margin: 40px auto 35px;
 }
 
-.rates-options {font-size: 16px;line-height: 23px;font-weight: 500;letter-spacing: 0.025em;}
+.rates-options {
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+}
 
 .rates-options__inner {}
 
