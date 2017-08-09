@@ -168,7 +168,8 @@ body {
   opacity: 1;
 }
 
-.link:hover {
+.link:hover,
+.link:focus {
   color: inherit;
   opacity: 0.6;
 }
@@ -244,10 +245,6 @@ body {
 
 .noscript__link {
   color: #000;
-}
-
-.noscript__link:hover {
-  opacity: 0.6;
 }
 
 .noscript__paragraph {
