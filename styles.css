@@ -231,6 +231,33 @@ body {
   color: #000;
 }
 
+.noscript {
+  width: 100%;
+  position: fixed;
+  bottom: 200px;
+  z-index: 20;
+  color: #fff;
+  font-size: 16px;
+  line-height: 22px;
+  background-color: #ff6400;
+}
+
+.noscript__link {
+  color: #000;
+}
+
+.noscript__link:hover {
+  opacity: 0.6;
+}
+
+.noscript__paragraph {
+  margin: 15px 0;
+}
+
+.noscript__text {
+  margin: 40px 0;
+}
+
 .title {
   letter-spacing: 0.075em;
   text-transform: Uppercase;
@@ -519,7 +546,8 @@ body {
   margin: 1em 0;
 }
 
-.features__content-list {  margin: 1em 0;
+.features__content-list {
+  margin: 1em 0;
 }
 
 .features__content-list-item {
@@ -769,7 +797,8 @@ body {
   margin-top: -8px;
 }
 
-.contract {  padding-top: 45px;
+.contract {
+  padding-top: 45px;
 }
 
 .contract__header {
