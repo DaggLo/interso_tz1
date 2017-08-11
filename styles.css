@@ -334,6 +334,7 @@ body {
  */
 
 .main-slider {
+  overflow-x: hidden;
 }
 
 .main-slider__button {
@@ -354,14 +355,17 @@ body {
   background-color: rgba(0, 0, 0, 0.55);
 }
 
+.main-slider__ctrl {
+  width: 30%;
+}
 
-.main-slider__ctrl-next {
+.main-slider__ctrl_next {
   left: 50% !important;
   right: unset !important;
   margin-left: 472px;
 }
 
-.main-slider__ctrl-prev {
+.main-slider__ctrl_prev {
   right: 50% !important;
   left: unset !important;
   margin-right: 472px;
