@@ -2,6 +2,12 @@
  * FONTS DECLARATIONS.
  * Best Practices Guide 2016
  * https://neonstud.io/blog/design/font-face-best-practices-guide-2016/
+ *
+ * The Lato font is taken from here:
+ * http://www.latofonts.com/lato-free-fonts/
+ *
+ * The Ruble glyph is taken from here:
+ * http://tema.livejournal.com/241645.html
  */
 @font-face {
   font-family: 'Lato Cyr';
@@ -91,6 +97,29 @@
     url('fonts/lato-bold.woff') format('woff');
 }
 
+@font-face {
+  font-family: 'ALS Rubl Regular';
+  font-weight: normal;
+  font-style: normal;
+  src: url('fonts/rouble.eot');
+  src:
+    local('ALS Rubl Regular'),
+    /**
+     * Check computer again using a different spelling.
+     * https://webdevstudios.com/2016/05/26/css-font-face-2016-edition/
+     */
+    local('ALS-Rubl-Regular'),
+    local('alsrublregular'),
+
+    url('fonts/rouble.eot?#iefix') format('embedded-opentype'),
+    url(data:application/font-woff2;charset=utf-8;base64,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) format('woff2'),
+
+    url('fonts/rouble.svg#als_rublregular') format('svg'),
+    url('fonts/rouble.otf') format('opentype'),
+    url('fonts/rouble.ttf') format('truetype'),
+    url(data:application/font-woff;charset=utf-8;base64,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) format('woff');
+}
+
 /**
  * Forcing some older versions of Chrome on Windows
  * to load the .svg fonts instead of the .woff ones.
@@ -124,6 +153,13 @@
     font-weight: 700;
     font-style: normal;
     src: url('fonts/lato-bold.svg') format('svg');
+  }
+
+  @font-face {
+    font-family: 'ALS Rubl Regular';
+    font-weight: normal;
+    font-style: normal;
+    src: url('fonts/rouble.svg') format('svg');
   }
 }
 
@@ -253,6 +289,13 @@ body {
 
 .noscript__text {
   margin: 40px 0;
+}
+
+.ruble {
+  font-family: 'ALS Rubl Regular';
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
 }
 
 .title {
