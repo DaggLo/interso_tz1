@@ -410,8 +410,9 @@ body {
 
 .main-slider__ctrl_prev {
   right: 50% !important;
-  left: unset !important;
+  left: auto !important;
   margin-right: 472px;
+  z-index: 11;
 }
 
 .main-slider__ctrl-icon {
@@ -450,7 +451,7 @@ body {
   right: 90px;
   width: 380px;
   padding-top: 33px;
-  text-align: start;
+  text-align: left;
   text-shadow: none;
 }
 
