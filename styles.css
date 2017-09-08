@@ -186,7 +186,7 @@ body {
 .contact-option__icon {
   display: inline-block;
   vertical-align: bottom;
-  margin-left: -2px;
+  margin-left: -1px;
   margin-right: 2px;
 }
 
@@ -301,7 +301,7 @@ body {
 }
 
 .title {
-  letter-spacing: 0.072em;
+  letter-spacing: 0.073em;
   text-transform: Uppercase;
 }
 
@@ -326,7 +326,7 @@ body {
 .top-bar__phone {
   font-size: 16px;
   line-height: 19px;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
   padding: 6px 15px 5px 65px;
   height: 40px;
 }
@@ -352,7 +352,7 @@ body {
   height: 40px;
   padding-top: 3px;
   padding-left: 3px;
-  margin-left: 1px;
+  margin-left: 2px;
 }
 
 .nav-bar {
