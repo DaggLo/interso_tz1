@@ -429,7 +429,7 @@ body {
 .main-slider__ctrl-icon {
   display: block;
   position: absolute;
-  top: 44.4%;
+  top: 44.7%;
   width: 20px;
   height: 37px;
   margin-left: -10px;
@@ -460,7 +460,7 @@ body {
 
 .main-slider__infoblock {
   position: absolute;
-  right: 79px;
+  right: 80px;
   width: 380px;
   padding-top: 36px;
   text-align: left;
