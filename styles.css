@@ -846,7 +846,9 @@ body {
   margin-left: -8px;
 }
 
-.rates-options__period {margin-left: -3px;}
+.rates-options__period {
+  margin-left: -3px;
+}
 
 .rates-options__middle-block {
   height: 41px;
@@ -860,7 +862,7 @@ body {
 
 .rates-options__bottom-block {
   background-color: #fff;
-  padding-bottom: 35px;
+  padding-bottom: 36px;
 }
 
 .rates-options__list {
@@ -887,8 +889,12 @@ body {
   letter-spacing: 0.02em;
 }
 
+.rates-options__button_1 {
+  margin-top: -5px;
+}
+
 .contract {
-  padding-top: 42px;
+  padding-top: 41px;
 }
 
 .contract__header {
