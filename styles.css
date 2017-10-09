@@ -716,7 +716,7 @@ body {
 
 .about-service__content-block {
   margin-top: 37px;
-  padding-bottom: 35px;
+  padding-bottom: 33px;
 }
 
 .about-service__icon {
@@ -776,11 +776,12 @@ body {
 }
 
 .rates-header__header {
-  font-size: 50px;
+  font-size: 51px;
   line-height: 50px;
   font-weight: 300;
+  letter-spacing: -0.017em;
   color: #ff6400;
-  margin: 40px auto 35px;
+  margin: 45px 2px 23px 0;
 }
 
 .rates-options {
@@ -819,7 +820,7 @@ body {
 .rates-options__top-block {
   background-color: #ff6400;
   color: #fff;
-  height: 120px;
+  height: 127px;
 }
 
 .rates-options__header {
@@ -827,12 +828,13 @@ body {
   font-weight: 500;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 20px;
+  letter-spacing: 0.03em;
+  margin: -3px 0 28px 3px;
 }
 
 .rates-options__price {
-  margin-bottom: 5px;
+  margin-bottom: 4px;
+  padding-left: 2px;
 }
 
 .rates-options__value {
@@ -841,17 +843,19 @@ body {
 
 .rates-options__currency {
   font-size: 30px;
+  margin-left: -8px;
 }
 
-.rates-options__period {
-}
+.rates-options__period {margin-left: -3px;}
 
 .rates-options__middle-block {
-  height: 40px;
+  height: 41px;
   line-height: 40px;
+  letter-spacing: 0.03em;
   background-color: #ffbf96;
   color: #a64100;
   text-transform: uppercase;
+  padding: 3px 3px 3px 0;
 }
 
 .rates-options__bottom-block {
@@ -862,26 +866,29 @@ body {
 .rates-options__list {
   list-style-type: none;
   margin: 0;
-  padding: 35px 0;
+  padding: 33px 0;
   font-size: 14px;
   line-height: 19px;
   font-weight: 400;
+  letter-spacing: 0.0em;
 }
 
 .rates-options__list-item {
-  margin-bottom: 8px;
+  margin: 0 0 8px -5px;
 }
 
 .rates-options__button {
   color: #fff;
   text-transform: uppercase;
-  width: 195px;
-  height: 55px;
-  margin-top: -8px;
+  width: 193px;
+  height: 56px;
+  margin: -10px 0 0 2px;
+  padding: 11px 5px 5px 3px;
+  letter-spacing: 0.02em;
 }
 
 .contract {
-  padding-top: 45px;
+  padding-top: 42px;
 }
 
 .contract__header {
@@ -890,15 +897,15 @@ body {
   font-size: 20px;
   line-height: 25px;
   font-weight: 500;
-  letter-spacing: 0.025em;
-  margin-top: 0;
-  margin-bottom: 12px;
+  letter-spacing: 0.015em;
+  margin: 0 0 6px;
 }
 
 .contract__paragraph {
+  line-height: 19px;
+  letter-spacing: 0.003em;
   width: 760px;
-  padding-top: 5px;
-  padding-bottom: 40px;
+  padding: 5px 0 40px 0;
   margin: 0 auto;
 }
 
