@@ -911,7 +911,7 @@ body {
   line-height: 19px;
   letter-spacing: 0.003em;
   width: 760px;
-  padding: 5px 0 40px 0;
+  padding: 5px 0 39px 0;
   margin: 0 auto;
 }
 
@@ -929,9 +929,10 @@ body {
   color: #95a300;
   font-size: 50px;
   line-height: 50px;
+  letter-spacing: -0.005em;
   font-weight: 300;
   text-align: center;
-  margin: 40px auto;
+  margin: 47px 0 38px -4px;
 }
 
 .templates-examples {
@@ -941,6 +942,19 @@ body {
   background-color: transparent;
   border: none;
   padding: 0;
+}
+
+.templates-item__details {
+  display: block;
+  color: #95a300;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: 0.005em;
+}
+
+.templates-item:hover .templates-item__details {
+  color: #000;
 }
 
 .templates-item__img {
@@ -959,19 +973,19 @@ body {
   line-height: 28px;
   font-weight: 500;
   letter-spacing: 0.025em;
-  margin: 20px auto 0;
+  margin: 17px auto 5px;
 }
 
-.templates-item__details {
-  display: block;
-  color: #95a300;
+.templates-item__header_1 {
+  margin-top: 20px;
+}
+
+.templates-item__number {
   font-size: 14px;
-  line-height: 28px;
-  font-weight: 400;
-}
-
-.templates-item:hover .templates-item__details {
-  color: #000;
+  line-height: 14px;
+  text-decoration: underline;
+  vertical-align: top;
+  display: inline-block;
 }
 
 .modal-content {
@@ -987,7 +1001,7 @@ body {
  * Clients.
  */
 .clients {
-  padding-top: 65px;
+  padding: 56px 0 0 0;
 }
 
 .clients-header {
