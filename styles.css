@@ -293,6 +293,12 @@ body {
   margin: 40px 0;
 }
 
+.number {
+  text-decoration: underline;
+  vertical-align: top;
+  display: inline-block;
+}
+
 .ruble {
   font-family: 'ALS Rubl Regular';
   font-style: normal;
@@ -983,9 +989,6 @@ body {
 .templates-item__number {
   font-size: 14px;
   line-height: 14px;
-  text-decoration: underline;
-  vertical-align: top;
-  display: inline-block;
 }
 
 .modal-content {
@@ -1016,19 +1019,22 @@ body {
   font-size: 18px;
   line-height: 20px;
   font-weight: 400;
-  margin: 25px auto 20px;
+  letter-spacing: 0.005em;
+  margin: 27px 0 22px -2px;
 }
 
 .clients-header__count {
   font-size: 50px;
   line-height: 45px;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.000em;
+  margin-left: -2px;
 }
 
 .clients-header__units {
   font-size: 26px;
   line-height: 30px;
   letter-spacing: 0.025em;
+  margin: -1px 0 0 -3px;
 }
 
 .clients-examples {
@@ -1049,8 +1055,6 @@ body {
   background-image: url('img/sprites.png');
   background-repeat: no-repeat;
   background-position: -105px -43px;
-  top: 176px;
-  left: 150px;
 }
 
 .clients-item:hover {
@@ -1059,22 +1063,67 @@ body {
 
 .clients-item_1 {
   top: -158px;
-  left: 17px;
+  left: 16px;
+}
+
+.clients-item_1::after {
+  top: 176px;
+  left: 149px;
 }
 
 .clients-item_2 {
   top: 0px;
-  left: 236px;
+  left: 234px;
+}
+
+.clients-item_2::after {
+  top: 176px;
+  left: 154px;
 }
 
 .clients-item_3 {
-  top: 0;
+  top: 2px;
   left: 514px;
 }
 
+.clients-item_3::after {
+  top: 174px;
+  left: 156px;
+}
+
 .clients-item_4 {
-  top: -157px;
+  top: -165px;
   left: 734px;
+}
+
+.clients-item_4::after {
+  top: 183px;
+  left: 153px;
+}
+
+.clients-item__caption {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.clients-item_1 .clients-item__caption {
+  letter-spacing: 0.002em;
+  margin: 12px 0 0 5px;
+}
+
+.clients-item_2 .clients-item__caption {
+  letter-spacing: 0.002em;
+  margin: 17px 0 0 0px;
+}
+
+.clients-item_3 .clients-item__caption {
+  letter-spacing: 0.002em;
+  margin: 15px 0 0 -2px;
+}
+
+.clients-item_4 .clients-item__caption {
+  letter-spacing: 0.002em;
+  margin: 19px 0 0 1px;
 }
 
 .clients-item__img {
@@ -1109,19 +1158,18 @@ body {
   background-position: -32px 0px;
 }
 
-.clients-item__caption {
+.clients-item__number {
   font-size: 14px;
-  line-height: 19px;
-  margin-top: 10px;
+  line-height: 14px;
 }
 
 .clients-map {
   color: #4186d3;
   font-size: 18px;
-  line-height: 19px;
+  line-height: 14px;
   text-align: center;
-  padding-top: 60px;
-  padding-bottom: 35px;
+  letter-spacing: 0.002em;
+  padding: 66px 2px 35px 0;
 }
 
 .clients-map__link {
@@ -1139,6 +1187,7 @@ body {
   background-position: -253px -70px;
   margin-right: 9px;
   opacity: 0.85;
+  vertical-align: bottom;
 }
 
 .clients-map__link:hover::before {
