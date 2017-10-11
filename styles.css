@@ -1169,7 +1169,7 @@ body {
   line-height: 14px;
   text-align: center;
   letter-spacing: 0.002em;
-  padding: 66px 2px 35px 0;
+  padding: 66px 2px 40px 0;
 }
 
 .clients-map__link {
@@ -1199,19 +1199,17 @@ body {
  * News and feedback.
  */
 .news-and-feedback {
-  height: 708px;
+  padding-bottom: 24px;
   background: linear-gradient(to right, #f2f9ff 50%, #ffece0 50%);
-  /* background-image: url('img/layer_56.png'); */
-  /* background-size: cover; */
 }
 
 .news-and-feedback__header {
   font-size: 22px;
   line-height: 50px;
   font-weight: 300;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.035em;
   text-transform: uppercase;
-  margin: 40px auto 27px;
+  margin: 40px -2px 27px -1px;
 }
 
 
@@ -1223,7 +1221,7 @@ body {
 }
 
 .news-item {
-  width: 410px;
+  width: 413px;
   margin-bottom: 45px;
 }
 
@@ -1232,19 +1230,21 @@ body {
   font-size: 18px;
   line-height: 23px;
   font-weight: 400;
-  margin: 0 0 10px;
+  letter-spacing: 0.002em;
+  margin: 1px 0 9px;
 }
 
 .news-item__content {
   font-size: 14px;
   line-height: 19px;
-  margin: 0 0 8px;
+  letter-spacing: 0.003em;
+  margin: 0 0 8px 0;
 }
 
 .news-item__date {
   font-size: 12px;
   line-height: 19px;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.035em;
 }
 
 
@@ -1283,7 +1283,8 @@ body {
   font-size: 18px;
   line-height: 27px;
   font-weight: 300;
-  padding: 46px 48px 17px 50px;
+  letter-spacing: 0.000em;
+  padding: 47px 49px 16px 49px;
   margin: 0;
 }
 
@@ -1294,21 +1295,20 @@ body {
   letter-spacing: 0.05em;
   font-style: normal;
   text-transform: uppercase;
-  margin-left: 50px;
+  margin-left: 49px;
 }
 
 .feedback-slider__controls {
   padding: 10px;
-  margin-top: 32px;
+  margin-top: 31px;
 }
 
 .feedback-slider__controls_left {
   margin-left: 10px;
-  padding-right: 9px;
+  margin-right: -3px;
 }
 
 .feedback-slider__controls_right {
-  padding-left: 9px;
 }
 
 .feedback-slider__icon {
