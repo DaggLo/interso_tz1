@@ -1397,14 +1397,15 @@ body {
   background-position: 0 0;
   width: 82px;
   height: 38px;
+  margin: 1px 0 0 0;
 }
 
 .company-details__goal {
   font-size: 14px;
   line-height: 19px;
-  padding-left: 42px;
-  margin-right: -15px;
-  margin-top: -4px;
+  letter-spacing: 0.005em;
+  padding-left: 41px;
+  margin: 0 -10px 0 0;
 }
 
 .company-details__button {
@@ -1413,14 +1414,15 @@ body {
   width: 141px;
   height: 39px;
   color: #fff;
-  margin-left: 49px;
-  margin-top: 1px;
+  margin: 2px 0 0 48px;
+  padding-top: 1px;
 }
 
 .company-details__details {
   font-size: 12px;
   line-height: 17px;
-  margin: -3px 0 20px 25px;
+  letter-spacing: -0.003em;
+  margin: -1px 0 18px 25px;
 }
 
 .company-details__link {
